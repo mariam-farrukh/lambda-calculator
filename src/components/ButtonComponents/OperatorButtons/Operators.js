@@ -15,7 +15,7 @@ const Operators = (props) => {
        component matching the name on the provided file. Pass
        it any props needed by the child component*/
        props.operators.map(a => {
-         return <OperatorButton key={a.char} optionText={a.char}/>
+         return <OperatorButton key={a.char} optionText={a.char} handleButtonPress={props.handleButtonPress.value}/>
        })}
     </div>
   );

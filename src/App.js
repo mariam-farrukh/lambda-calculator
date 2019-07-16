@@ -46,6 +46,7 @@ function App() {
             operators={operators}
             count={count}
             setCount={setCount}
+            handleButtonPress={handleButtonPress}
           />
       </div>
       </div>
