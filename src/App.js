@@ -18,7 +18,8 @@ function App() {
   // Don't forget to pass the functions (and any additional data needed) to the components as props
   const [count, setCount] = useState(0);
   const handleButtonPress = (buttonValue) => {
-    setCount(buttonValue);
+    console.log(buttonValue);
+    setCount(count + buttonValue);
   }
 
 
@@ -35,17 +36,14 @@ function App() {
           specials={specials}
           count={count}
           setCount={setCount}
+          handleButtonPress = {handleButtonPress}
         />
         <Numbers
             numbers={numbers}
-            count={count}
-            setCount={setCount}
             handleButtonPress={handleButtonPress}
           />
         <Operators
             operators={operators}
-            count={count}
-            setCount={setCount}
             handleButtonPress={handleButtonPress}
           />
       </div>
