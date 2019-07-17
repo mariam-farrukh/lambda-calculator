@@ -1,9 +1,9 @@
 .container{
     display: flex;
-    background-color: red;
-    width: 25em;
-    margin: 1em;
-    padding: 2em;
+    background-color: #AE1E39;
+    width: 40em;
+    margin: 2em;
+    padding: 3em;
     border-radius: 1.5em;
 }
 .App{
@@ -39,22 +39,46 @@
 .number-btn{
     display: flex;
     flex-wrap: wrap;
-    width: 2em;
-    height: 2em;
-    padding: 1em;
-    border-radius:1em;
+    width: 8em;
+    height: 8em;
+    padding: 3em;
+    border-radius:4em;
+    background-color: 	#06447D;
+    border: none;
+    color: white;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 .special-btn{
     display: flex;
     /* flex-wrap: wrap; */
-    width: 2em;
-    height: 2em;
-    border-radius:1em;
+    width: 8em;
+    height: 8em;
+    padding: 3em;
+    border-radius:4em;
+    border: none;
+    background-color: 	#0D5F9A;
+    color: white;
 }
 .operator-btn{
     display: flex;
     flex-wrap: wrap;
-    width: 2em;
-    height: 2em;
-    border-radius:1em;
+    width: 8em;
+    height: 8em;
+    padding: 3em;
+    border-radius:4em;
+    border: none;
+    background-color: #007598;
+    color: white;
+}
+.output{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 1em;
+    height: 4em;
+    background-color: 	#323335;
+    border-radius: 2em;
+    color: white;
 }
