@@ -26,27 +26,29 @@ function App() {
   return (
     <div className="container">
       <div className="App">
-      <Logo />
-      <Display
-        count={count}
-        setCount={setCount}
-      />
-      <div className = "btn-container">
-        <Specials 
-          specials={specials}
+        <Logo />
+        <Display
           count={count}
           setCount={setCount}
-          handleButtonPress = {handleButtonPress}
         />
-        <Numbers
-            numbers={numbers}
-            handleButtonPress={handleButtonPress}
+        <div className = "btn-container">
+          <Specials 
+            specials={specials}
+            count={count}
+            setCount={setCount}
+            handleButtonPress = {handleButtonPress}
           />
-        <Operators
-            operators={operators}
-            handleButtonPress={handleButtonPress}
-          />
-      </div>
+          <Numbers
+              numbers={numbers}
+              handleButtonPress={handleButtonPress}
+            />
+        </div>
+        <div className = "btn-container-operators">
+          <Operators
+              operators={operators}
+              handleButtonPress={handleButtonPress}
+            />
+        </div>
       </div>
     </div>
   );
