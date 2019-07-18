@@ -18,36 +18,37 @@ function App() {
   // Don't forget to pass the functions (and any additional data needed) to the components as props
   const [count, setCount] = useState(0);
   const handleButtonPress = (buttonValue) => {
-    setCount(buttonValue);
+    console.log(buttonValue);
+    setCount(count + buttonValue);
   }
 
 
   return (
     <div className="container">
       <div className="App">
-      <Logo />
-      <Display
-        count={count}
-        setCount={setCount}
-      />
-      <div className = "btn-container">
-        <Specials 
-          specials={specials}
+        <Logo />
+        <Display
           count={count}
           setCount={setCount}
         />
-        <Numbers
-            numbers={numbers}
+        <div className = "btn-container">
+          <Specials 
+            specials={specials}
             count={count}
             setCount={setCount}
-            handleButtonPress={handleButtonPress}
+            handleButtonPress = {handleButtonPress}
           />
-        <Operators
-            operators={operators}
-            count={count}
-            setCount={setCount}
-          />
-      </div>
+          <Numbers
+              numbers={numbers}
+              handleButtonPress={handleButtonPress}
+            />
+        </div>
+        <div className = "btn-container-operators">
+          <Operators
+              operators={operators}
+              handleButtonPress={handleButtonPress}
+            />
+        </div>
       </div>
     </div>
   );

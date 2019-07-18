@@ -8,11 +8,11 @@ import NumberButton from "./NumberButton.js";
 
 const Numbers = (props) => {
   // STEP 2 - add the imported data to state
-
+  // const [numberState, setNumberState] = useState(numbers);
   return (
     <div className = "number-container">
       { props.numbers.map(a => {
-        return <NumberButton key={a} optionText={a} handleButtonPress={props.handleButtonPress} count={props.count} setCount={props.setCount}/>
+        return <NumberButton key={a} optionText={a} handleButtonPress={props.handleButtonPress} />
         })
       }
     </div>
